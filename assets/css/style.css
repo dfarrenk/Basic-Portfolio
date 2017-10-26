@@ -1,12 +1,14 @@
 body{
     color:  #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    
+    display:inline-block;
+    /*background-image: url(../images/spiration-light.png);*/
+
 }
 
 footer {
     background: #666666;
-    border-top: 5px solid #4aaaa5;
+    border-top: 10px solid #4aaaa5;
     width: 100%;
     height: 100px;
     clear: both ;
@@ -16,8 +18,12 @@ footer {
     text-align: center;
 }
 
+ul{
+    list-style: none;
+}
+
 header{
-    background: ffffff;
+    background-color: #ffffff;
     border-bottom: 3px solid #cccccc;
     position: relative;
     height: 80px;
@@ -30,8 +36,8 @@ h1, h2, h3, h4, h5, h6{
 h1{
     float: left;
     /* h1 has some default margin, a bottom of 0 will let it lie flush with the bottom of the header bar*/
-    margin: 0 0 0 15%;
-    height: 85%;
+    margin: 0 0 0 60px;
+    height: 100%;
     padding: 0px 10px;
     /*On Stack Overflow recommendation */
     display: flex;
@@ -46,11 +52,18 @@ h1{
 
 h2 {
         border-bottom: 3px solid #cccccc;
+        color: teal;
+        padding-bottom: 10px;
 
 }
 
 nav{
     float: right;
+    margin-right: 60px;   
+}
+
+.centered{
+    text-align: center;
 }
 
 .clearfix::after {
@@ -59,26 +72,40 @@ nav{
 	clear: both;
 }
 
+.icon{
+    height: 64px;
+}
+
+
 
 #mainBackground{
     background-image: url(../images/spiration-light.png);
+  
 }
+
 
 
 #mainContent {
     width: 960px;
+    padding: 40px 60px;
+
 }
 
 #contentBox {
-    width: 650px ;
+    float: left;
+    width: 600px; /* 650 total with padding and margin?*/
     background: #ffffff;
     padding: 10px;
+    margin-right: 40px;
 }
 
 
 #sidebar{
+    float: right;
     width: 270px;
-    
+    height: 200px;
+    background: #ffffff;
+    padding: 2px;
 }
 
 
